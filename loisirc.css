@@ -1,0 +1,143 @@
+/* Style global */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0a1817;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Logo indépendant */
+.logoP {
+    position: absolute;
+    top: 2em;
+    left: 20px;
+    width: 12em;
+    height: auto;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 3em;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li:hover {
+    border-bottom: solid 1px gold;
+    color: gold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sous-menus */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    padding: 12px 16px;
+}
+
+nav ul li ul li a {
+    color: white;
+}
+
+nav ul li ul li:hover a {
+    color: gold;
+}
+
+.imgl{ 
+    width: 20em;
+    height: 15em;
+}
+
+/* Main content */
+main {
+    padding: 5em 2em;
+}
+
+/*loisir section v1*/
+.shenaz{
+    padding-bottom: 13em;
+}
+
+.Loisirs{
+   position: absolute;
+   top: 4em;
+   left: 38em;
+}
+
+.hb {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 2em; /* Espace entre les éléments */
+}
+
+.hb > div {
+    flex: 1 1 calc(33.333% - 2em); /* 3 éléments par ligne avec espace */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em; /* Espace entre les lignes */
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+img{
+    border: black;
+    border-radius: 10px;
+    height: 20em;
+    width: 19em;
+}
+
+.hb img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    border-radius: 15px; /* Bords arrondis pour les images */
+    border: solid darkslategray;
+    object-fit: cover; /* Ajustement de l'image pour éviter la déformation */
+}
+
+.hb p {
+    margin-top: 15px; /* Espace entre l'image et le texte */
+    font-family: 'Arial', sans-serif; /* Police moderne */
+    font-size: 1.1em; /* Taille du texte */
+    color: white; /* Couleur du texte */
+    line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond noir semi-transparent sous le texte */
+    border-radius: 8px; /* Bordures arrondies pour le texte */
+    width: 90%; /* Le texte occupe 90% de la largeur du conteneur */
+}
